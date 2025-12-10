@@ -1,4 +1,4 @@
-// deploy-commands.js
+// 
 require('dotenv').config();
 const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 
@@ -10,7 +10,7 @@ const commands = [
     .toJSON()
 ];
 
-// Token değişken adı: .env içinde DISCORD_TOKEN kullanıyorsan bu satır ihtiyaç duyduğun değerle çalışır.
+// 
 const token = process.env.TOKEN || process.env.DISCORD_TOKEN || process.env.DISCORD_TOKEN?.trim();
 
 if (!token) {
